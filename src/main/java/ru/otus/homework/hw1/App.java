@@ -39,7 +39,10 @@ public class App {
     }
 
     public static void greetings() {
-        System.out.println("Hello, World, from, Java");
+        System.out.print("Hello,");
+        System.out.print("World,");
+        System.out.print("from,");
+        System.out.print("Java");
     }
 
     public static void checkSign(int a, int b, int c) {
@@ -61,7 +64,7 @@ public class App {
         if (data <= 10) {
             System.out.println("Красный");
         }
-        else if(data > 10 && data <= 20) {
+        else if(data <= 20) {
             System.out.println("Желтый");
         }
         else {
@@ -95,12 +98,7 @@ public class App {
         if (onlyUnsigned) {
             return (int) (Math.random() * maxValue);
         } else {
-            int isUnsigned =  (int) (Math.random() * 2);
-            if (isUnsigned == 0) {
-                return (int) (Math.random() * maxValue);
-            } else {
-                return (int) (Math.random() * maxValue) * -1;
-            }
+            return (int) ((Math.random() - 0.5) * 2 * maxValue);
         }
     }
 }
