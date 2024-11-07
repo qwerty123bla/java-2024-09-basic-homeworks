@@ -8,6 +8,6 @@ public class Horse extends Animal{
     @Override
     public float swim(int distance) {
         System.out.println(this.name + " нужно проплыть " + distance + " метров");
-        return action(distance, 2, this.swimSpeed);
+        return action(distance, 4, this.swimSpeed);
     }
 }
