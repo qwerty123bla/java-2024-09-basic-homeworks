@@ -36,6 +36,6 @@ public abstract class Animal {
     public abstract float swim(int distance);
 
     public void info() {
-        System.out.println(this.name + " " + (((this.endurance) == 0) ? "Устал" : "Полон сил"));
+        System.out.println(name + (endurance == 0 ? " Устал" : " Полон сил"));
     }
 }
