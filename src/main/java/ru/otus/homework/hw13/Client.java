@@ -34,11 +34,7 @@ public class Client {
         try {
             outputStream.writeUTF(message);
             outputStream.flush();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
 
-        try {
             String result = inputStream.readUTF();
             System.out.println(result);
             System.out.println();
