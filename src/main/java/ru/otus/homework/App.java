@@ -9,15 +9,7 @@ import java.util.List;
 
 public class App {
     public static void main(String[] args) {
-        /*
-        Написать класс PersonDataBase, содержащий список Person, и имеющий следующие методы,
-        со следующей асимптотической сложностью (методы и конструктор класса Person реализовать самостоятельно)
 
-        Person findById(Long id) - найти Person по id - O(1)
-        void add(Person person) - добавить Person - O(1)
-        isManager(Person person) - O(1) - true если Position : MANAGER, DIRECTOR, BRANCH_DIRECTOR или SENIOR_MANAGER
-        isEmployee(Long id) - O(1) - true если Employee имеет любой другой Position
-         */
         PersonDataBase pd = new PersonDataBase();
         pd.add(new Person("Андрей", Position.DIRECTOR, 1L));
         pd.add(new Person("Сергей", Position.DRIVER, 2L));

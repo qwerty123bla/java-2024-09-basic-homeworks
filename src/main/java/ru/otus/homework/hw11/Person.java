@@ -1,9 +1,9 @@
 package ru.otus.homework.hw11;
 
 public class Person implements Comparable {
-    String name;
-    Position position;
-    Long id;
+    private String name;
+    private Position position;
+    private Long id;
 
     public Person(String name, Position position, Long id) {
         this.name = name;
@@ -16,7 +16,11 @@ public class Person implements Comparable {
 
     @Override
     public String toString() {
-        return "id: " + this.id + " Имя: " + this.name; // + " Должность: " + this.position;
+        return "id: " + this.id + " Имя: " + this.name;
+    }
+
+    public Position getPosition() {
+        return this.position;
     }
 
     @Override

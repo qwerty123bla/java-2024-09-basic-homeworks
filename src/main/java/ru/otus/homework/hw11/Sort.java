@@ -11,7 +11,6 @@ public class Sort {
 
     public static void quickSort(int array[], int start, int end) {
         if (start < end) {
-            // получаем середину заданного отрезка массива
             int middle = start + (int)Math.floor((end - start) / 2f);
 
             int[] tmp_arr = Arrays.copyOfRange(array, start, end);
@@ -26,7 +25,6 @@ public class Sort {
                 }
             }
 
-            //System.out.println(middle + " " + start + " " + end + " " + Arrays.toString(array));
 
             if (end - start > 1) {
                 quickSort(array, start, middle);
@@ -43,7 +41,6 @@ public class Sort {
                     replaceElement(array, j, j + 1);
                 }
             }
-            //System.out.println(i + " " +( array.length - 1 - i) + " " +" " + Arrays.toString(array));
         }
     }
 }
