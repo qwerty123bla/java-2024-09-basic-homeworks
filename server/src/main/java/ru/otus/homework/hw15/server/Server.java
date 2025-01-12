@@ -18,7 +18,7 @@ public class Server {
     public Server(int port) {
         this.port = port;
         clients = new ConcurrentHashMap<>(); //CopyOnWriteArrayList<>();
-        authenticatedProvider = new InMemoryAuthenticatedProvider(this);
+        authenticatedProvider = new SQLAuthenticatedProvider(this) /*InMemoryAuthenticatedProvider(this)*/;
     }
 
     public void start() {
